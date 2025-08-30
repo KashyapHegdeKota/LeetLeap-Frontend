@@ -4,6 +4,7 @@ import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useUserAuth } from "../context/AuthContext";
 import { auth } from "@/firebaseConfig";
+import Link from "next/link";
 export default function GetStartedPage() {
   const { user, loading } = useUserAuth();
   const router = useRouter();
@@ -31,7 +32,9 @@ export default function GetStartedPage() {
         {/* Navigation Bar */}
         <nav className="bg-white shadow-sm">
           <div className="container mx-auto flex items-center justify-between px-6 py-4">
-            <h1 className="text-2xl font-bold text-gray-800">LeetLeap</h1>
+            <h1 className="text-2xl font-bold text-gray-800">
+              <Link href="/">LeetLeap</Link>
+            </h1>
             <div>
               <span className="text-gray-600 mr-4">Welcome, {user.email}</span>
               <button

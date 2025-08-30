@@ -6,7 +6,9 @@ const LandingPage = () => {
       {/* Navigation Bar */}
       <nav className="bg-white shadow-sm">
         <div className="container mx-auto px-6 py-4">
-          <h1 className="text-2xl font-bold text-gray-800">LeetLeap</h1>
+          <h1 className="text-2xl font-bold text-gray-800">
+            <Link href="/">LeetLeap</Link>
+          </h1>
         </div>
       </nav>
 
